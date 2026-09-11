@@ -56,7 +56,50 @@
 ### Step 11:
   Stop
 # Program:
+```
+#include<stdio.h>
+
+int main()
+{
+    float math, science, english, average;
+
+    printf("Enter marks for Math, Science, English: ");
+    scanf("%f %f %f", &math, &science, &english);
+
+    average = (math + science + english) / 3.0f;
+
+    printf("Average = %.2f\n", average);
+
+    if(average >= 90.0f)
+    {
+        printf("Grade A");
+    }
+    else
+    {
+        if(average >= 75.0f)
+        {
+            printf("Grade B");
+        }
+        else
+        {
+            if(average >= 50.0f)
+            {
+                printf("Grade C");
+            }
+            else
+            {
+                printf("Grade F");
+            }
+        }
+    }
+
+    return 0;
+}
+```
+
 # Output:
+<img width="561" height="228" alt="image" src="https://github.com/user-attachments/assets/ff785f15-8794-44eb-b01e-b7c4640c7867" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -88,7 +131,25 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 
 # Program:
+```
+#include<stdio.h>
+
+int main()
+{
+    int number = 15;
+    int i;
+
+    for(i = 1; i <= 10; i++)
+    {
+        printf("%d x %d = %d\n", number, i, number * i);
+    }
+
+    return 0;
+}
+```
 # Output:
+<img width="401" height="479" alt="image" src="https://github.com/user-attachments/assets/80904787-254a-430e-9bb7-ac2c90a29a80" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -131,7 +192,39 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7:   
   Stop
 # Program:
+```
+#include<stdio.h>
+
+int main()
+{
+    int n, i = 2, f = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    while(i <= n - 1)
+    {
+        if(n % i == 0)
+        {
+            f = 1;
+            break;
+        }
+        i++;
+    }
+
+    if(n <= 1)
+        printf("Not Prime");
+    else if(f == 0)
+        printf("Prime Number");
+    else
+        printf("Not Prime");
+
+    return 0;
+}
+```
 # Output:
+<img width="415" height="253" alt="image" src="https://github.com/user-attachments/assets/63051e7b-7a17-4d03-8179-e0de48342452" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -179,7 +272,36 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include<stdio.h>
+
+int main()
+{
+    int i, j, n = 5;
+
+    for(i = 1; i <= n; i++)
+    {
+        for(j = 1; j <= n; j++)
+        {
+            if(i == 1)
+                printf("%d", j);
+            else if(j == 1)
+                printf("%d", i);
+            else if(j == n)
+                printf("%d", n - i + 1);
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
 # Output:
+<img width="477" height="374" alt="image" src="https://github.com/user-attachments/assets/d677f5a0-8782-4891-93b8-0354ec32fedb" />
+
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -232,6 +354,40 @@ Thus, the program was implemented and executed successfully, and the required ou
   Decrease i by 1 and go back to Step 6.
 ### Step 8:
   Stop
+## PROGRAM:
+```
+#include<stdio.h>
+
+int main()
+{
+    int i, j;
+
+    printf("0\n");
+
+    for(i = 7; i >= 1; i--)
+    {
+        for(j = i; j <= 7; j++)
+        {
+            printf("%d ", j);
+        }
+
+        printf("0 ");
+
+        for(j = 7; j >= i; j--)
+        {
+            printf("%d ", j);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+## OUTPUT:
+<img width="538" height="370" alt="image" src="https://github.com/user-attachments/assets/7ba6ec49-a21a-45eb-ab22-67f8b8ed3339" />
+
+
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
